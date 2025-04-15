@@ -7,7 +7,7 @@ public class CommandParser {
         if (input.equals("look")) return new LookCommand();
         if (input.equals("use potion")) return new UsePotionCommand();
         if (input.startsWith("skill ")) return new SkillCommand(input.substring(6));
-        if (input.equals("exit")) return new ExitCommand();  // ✅ 新增這行
+        if (input.equals("exit")) return new ExitCommand();
         return null;
     }
 }

@@ -4,6 +4,6 @@ public class ExitCommand implements Command {
     @Override
     public void execute(Player player, GameContext context) {
         System.out.println("👋 你選擇離開遊戲，掰掰！");
-        System.exit(0);  // 強制結束 JVM 執行
+        System.exit(0);
     }
 }
