@@ -1,12 +1,9 @@
-/*----------------------------------------------------------------------------------------
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License. See LICENSE in the project root for license information.
- *---------------------------------------------------------------------------------------*/
-
 package com.mycompany.app;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello Remote World!");
+        GameContext context = GameInitializer.init();  // 初始化地圖與玩家
+        GameEngine engine = new GameEngine(context);   // 建立遊戲引擎
+        engine.start();                                // 啟動遊戲主迴圈
     }
 }
